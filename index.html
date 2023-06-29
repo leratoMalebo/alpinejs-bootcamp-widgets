@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="greet.js" defer></script>
+    <script src="phoneBill.js" defer></script>
+    <script src="transportFee.js" defer></script>
+    <script src="enoughAirtime.js" defer></script>
+    <title>Alphine widgets on functions</title>
 </head>
-<body>
+<body style="background-color: aquamarine;">
+    <h2>Alphine Widgets on Alphine</h2>
+
+    <!---For greet function create multiple languages as widgets-->
+
+    <hr>
+
+    <!--For transport fee function utilize radio buttons-->
+    <input type="radio" name="effefefefe" id="">
+    <input type="radio" name="effefefefe" id="">
+
+    <hr>
+
+    <!--for phone bill function use input text and a button -->
+
+    <div>
+        enter the phone number
+        <input type="text" name="" id="">
+
+
+    </div>
+
+    <div>
+        <button>Show Bill</button>
+    </div>
+
+    <hr>
+
+    <!--enough airtime function widgets-->
+    <div x-data="{ usage: '', airtime: '', result: 0 }">
+        <label for="usage">Projected Usage:</label>
+        <input type="text" x-model="usage" id="usage">
+      
+        <label for="airtime">Available Airtime:</label>
+        <input type="text" x-model="airtime" id="airtime">
+      
+        <button x-on:click="calculateResult()">Calculate</button>
+      
+        <p>Result: <span x-text="result"></span></p>
+      </div>
+      
+
     
 </body>
 </html>
